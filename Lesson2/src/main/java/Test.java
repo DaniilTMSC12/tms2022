@@ -1,5 +1,5 @@
 public class Test {
-    public static void main(String() args) {
-        System.out.println("sdsada");
+    public static void main(String[] args) {
+        System.out.println("sdsadassada");
     }
 }
