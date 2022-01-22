@@ -15,7 +15,7 @@ public class HomeWork {
         boolean logic = true;
         System.out.println("Тру ор фолc? " + logic);
 //        строковый
-        String text = "Это строковый \"литерал\"";
+        String text = "Это строковый \"литерал\".";
         System.out.println(text);
 //        символьный
         char letterA = '\141';
