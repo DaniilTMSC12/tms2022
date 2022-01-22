@@ -3,8 +3,8 @@ public class HomeWork {
         //вывод на консоль
         printLiterals();
         //Некоторые тесты для проверки задач.
-        System.out.println(sum(100, 200));
-        System.out.println(sum(Integer.MAX_VALUE, Integer.MAX_VALUE));
+        System.out.println(sum(Integer.MAX_VALUE, 200));
+        System.out.println(sum(300, 200));
         System.out.println(max(370, 349));
         System.out.println(calculateHypotenuse(12, 16));
     }
@@ -48,7 +48,8 @@ public class HomeWork {
      * 2. Дополнительно: сделать проверку если сумма a и b больше чем максимальное значение int то вернуть -1
      **/
     public static int sum(int a, int b) {
-        long math = (long) a + b;
+        long c = a;
+        long math = c + b;
         if (math > Integer.MAX_VALUE) {
             return -1;
         } else {
