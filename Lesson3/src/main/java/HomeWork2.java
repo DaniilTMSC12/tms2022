@@ -9,8 +9,8 @@ public class HomeWork2 {
     public static void main(String[] args) {
 
         //Тесты
-        System.out.println("Среднее значение массива равно " + average(null));
-        System.out.println("Максимальное значение массива равно " + max(null));
+        System.out.println("Среднее значение массива = " + average(null));
+        System.out.println("Максимальное значение массива = " + max(null));
 
         //Задачи:
         //1) Используя тип данных char и операцию инкремента вывести на консоль все буквы английского алфавита
