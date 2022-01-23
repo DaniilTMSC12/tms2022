@@ -48,9 +48,9 @@ public class HomeWork {
      * 2. Дополнительно: сделать проверку если сумма a и b больше чем максимальное значение int то вернуть -1
      **/
     public static int sum(int a, int b) {
-        int math = a + b;
+        long math = (long) a + b;
         if (math > Integer.MAX_VALUE) {
-            return --math;
+            return -1;
         } else {
             return a + b;
         }
@@ -72,12 +72,10 @@ public class HomeWork {
      * Метод должен вернуть 10
      */
     public static int max(int a, int b) {
-        if (a > b) {
+        if (a >= b) {
             return a;
-        } else if (b > a) {
-            return b;
         } else {
-            return a;
+            return b;
         }
     }
 
