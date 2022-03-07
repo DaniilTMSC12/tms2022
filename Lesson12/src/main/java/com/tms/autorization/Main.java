@@ -8,15 +8,15 @@ public class Main {
 
     public static boolean checkAuthorization(String login, String password, String confirmPassword) {
         try {
-            if (checkData(login) && checkData(password) && password.equals(confirmPassword)) {
-                System.out.println("Регистрация прошла успешно!");
-                return true;
-            } else if (!checkData(login)) {
+            if (!checkData(login)) {
                 throw new WrongLoginException("Вы ввели неверный формат логина!");
             } else if (!checkData(password)) {
                 throw new WrongPasswordException("Вы ввели неверный формат пароля!");
             } else if (!password.equals(confirmPassword)) {
                 throw new WrongPasswordException("Пароль и потверждённый пароль различаются!");
+            } else {
+                System.out.println("Регистрация прошла успешно!");
+                return true;
             }
         } catch (WrongLoginException | WrongPasswordException e) {
             e.printStackTrace();
