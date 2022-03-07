@@ -26,6 +26,9 @@
         <module>Lesson8.1</module>
         <module>Lesson9</module>
         <module>Lesson10</module>
+        <module>Lesson11</module>
+        <module>Lesson12</module>
+        <module>Lesson13</module>
     </modules>
 
     <dependencies>
@@ -34,6 +37,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.2.0</version>
+            <type>maven-plugin</type>
         </dependency>
     </dependencies>
 </project>
