@@ -45,7 +45,7 @@ public class Main {
         String[] allWords = example.split(" ");
         int countOfEnglishWords = 0;
         for (String word : allWords) {
-            if (word.matches("^[a-zA-Z()]+$")) {
+            if (word.matches("^[a-zA-Z]+$")) {
                 countOfEnglishWords++;
             }
         }
